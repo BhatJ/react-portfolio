@@ -6,7 +6,7 @@ import Resume from './sections/Resume';
 
 const styles = {
   navigationStyle: {
-    height: '70vh',
+    minHeight: '100vh',
     background: '#22577A',
     padding: '5%',
   },
