@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Project card styling
 const styles = {
   cardStyle: {
     width: '25%',
@@ -21,6 +22,7 @@ const styles = {
   }
 };
 
+// Return the HTML for a Project Card
 export default function project(props) {
   return (
     <div style={styles.cardStyle} className="card">

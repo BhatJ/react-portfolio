@@ -1,8 +1,11 @@
 import React from 'react';
+
+// import the icons for the GitHub, LinkedIn, and StackOverflow links in the footer
 import gitHubLogo from '../assets/github-8-64.png';
 import linkedInLogo from '../assets/linkedin-3-64.png';
 import stackoverflowLogo from '../assets/stackoverflow-6-64.png';
 
+// Footer styling
 const styles = {
   footerStyle: {
     display: 'flex',
@@ -16,6 +19,7 @@ const styles = {
   },
 };
 
+// Return the HTML for the footer component
 export default function Footer() {
   return (
     <div style = {styles.footerStyle}>

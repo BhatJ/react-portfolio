@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// Contact form styling
 const styles = {
   inputLabelStyle: {
     color: 'white',
@@ -63,6 +64,7 @@ function Form() {
     setEmail('');
   };
 
+  // This handles the display of error messages when focus changes from one field to another
   const handleBlur = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
@@ -70,7 +72,7 @@ function Form() {
     const inputName = e.target.name;
     const empty = !e.target.value;
 
-    // Check if the input is empty
+    // Check if an input is empty
     if(empty)
     {
       if(inputName === 'name')
@@ -85,6 +87,7 @@ function Form() {
       return;
     }
 
+    // Handle email validation
     if(inputName === 'email')
     {
       if (!validateEmail(email)) {
@@ -93,10 +96,11 @@ function Form() {
       }
     }
 
-    // Reset the error message
+    // Reset the error message if no errors are detected
     setErrorMessage('');
   }
 
+  // Return the HTML for the contact form component
   return (
     <div>
       <form className="form">

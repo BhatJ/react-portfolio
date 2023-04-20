@@ -2,6 +2,7 @@ import React, { useState }  from 'react';
 import Navigation from './Navigation';
 import background from '../assets/background.jpg'
 
+// Define the styles used for the header component
 const styles = {
   navbarStyle: {
     display: 'flex',
@@ -25,10 +26,16 @@ const styles = {
 };
 
 export default function Header() {
+
+  // Define a currentSection state variable to control which section the navigation component
+  // will render. SetCurrentSection is a function to update the state when it changes.
+  // This variable will be used to control the color of section links in the navbar for example.
   const [currentSection, setCurrentSection] = useState('About');
 
+  // This is the handler that updates the state when links in the navbar are clicked
   const handleSectionChange = (section) => setCurrentSection(section);
 
+  // Return the HTML for the header component
   return (
     <div>
       <nav style = {styles.navbarStyle}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 
+// Project styling
 const styles = {
   portfolioStyle: {
     display: "flex",
@@ -8,6 +9,8 @@ const styles = {
   },
 };
 
+// Project data array. Each element of this array will be passed as props
+// to the Project component that will render the project card.
 const projects = [
   {
     imgSrc: "horiseon-project.png",
@@ -41,6 +44,7 @@ const projects = [
   }
 ]
 
+// Return the HTML that renders each project card component
 export default function Porfolio() {
   return (
     <div style={styles.portfolioStyle}>

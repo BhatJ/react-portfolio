@@ -1,6 +1,9 @@
 import React from 'react';
+
+// Import the resume pdf file that can be downloaded
 import myResume from '../../assets/JB_resume.pdf';
 
+// Resume page styling
 const styles = {
   resumeDownloadStyle: {
     color: 'white',
@@ -12,6 +15,7 @@ const styles = {
   },
 };
 
+// Return the HTML for the resume page component
 export default function Resume() {
 
   return (

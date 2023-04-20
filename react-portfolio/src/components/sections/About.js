@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutLogo from '../../assets/user-7-128.png';
 
+// About page styling
 const styles = {
   bioStyle: {
     color: 'white',
@@ -9,6 +10,7 @@ const styles = {
   },
 };
 
+// Return the HTML for the About page component
 export default function About() {
   return (
     <div>
