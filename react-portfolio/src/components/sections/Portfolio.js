@@ -41,6 +41,11 @@ const projects = [
     imgSrc: "text-editor.png",
     deploymentUrl: "https://murmuring-journey-83808.herokuapp.com/",
     gitHubUrl: "https://github.com/BhatJ/text-editor"
+  },
+  {
+    imgSrc: "cat-adoption.png",
+    deploymentUrl: "https://hidden-river-85974.herokuapp.com/",
+    gitHubUrl: "https://github.com/ED0920/cat-adoption"
   }
 ]
 
@@ -54,6 +59,7 @@ export default function Porfolio() {
       <Project project={projects[3]}/>
       <Project project={projects[4]}/>
       <Project project={projects[5]}/>
+      <Project project={projects[6]}/>
     </div>
   );
 }
